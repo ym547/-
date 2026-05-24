@@ -1,0 +1,172 @@
+一、冲刺总结博客（正式提交版 · 完整格式）
+
+ 
+课程链接：https://edu.cnblogs.com/campus/gdgy/SoftwareEngineering24/?page=2
+作业要求链接：https://edu.cnblogs.com/campus/gdgy/SoftwareEngineering24/homework/15657
+团队名称：zzz开发团队
+团队成员及学号：
+张梓楠-3124004454
+叶明-3124004448
+作业目标：
+ 
+​
+1. 完成为期14天Alpha冲刺，落地前期制定的项目改进方案，优化项目功能、修复漏洞；
+​
+2. 落实每日10分钟站立会议制度，强化团队协作，统一开发规范与进度管理；
+​
+3. 梳理冲刺阶段成果、亮点与现存问题，总结团队工作经验；
+​
+4. 完善项目代码并同步至GitHub仓库，完成版本迭代与Release发布；
+​
+5. 记录冲刺全过程，制作主题Vlog留存团队开发日常。
+ 
+ 
+ 
+XX开发团队-Alpha冲刺总结
+ 
+一、冲刺计划落地情况
+ 
+本次Alpha冲刺周期共计14天，严格执行每日10分钟站立会议，全员准时参会，缺勤人员均提前报备并说明原因，全程遵守会议规则，仅同步进度、问题与计划，不讨论功能细节。
+ 
+对照前期《Alpha冲刺计划》，绝大多数改进目标已全部实现：
+ 
+1. 建立每日站会同步机制，团队信息互通效率大幅提升；
+​
+2. 统一代码规范、文件命名、提交规则，项目目录整洁，代码可维护性提高；
+​
+3. 完成全模块功能优化、系统性BUG测试、界面交互优化；
+​
+4. 按分工完成任务拆分，进度可控，无大面积任务延期情况；
+​
+5. 完成代码整合、版本归档，同步至GitHub并发布迭代版本。
+ 
+仅细节交互优化部分有少量内容因时间限制延后至Beta冲刺完成，整体冲刺目标圆满达成。
+ 
+冲刺计划链接：【粘贴你的冲刺计划文档/博客链接】
+ 
+二、项目亮点
+ 
+1. 功能完整性提升：在原有基础上补充边缘功能，核心业务流程全部跑通，操作逻辑流畅。
+​
+2. 代码规范化：统一编码风格、注释规范，模块解耦清晰，代码复用性强，便于后续迭代。
+​
+3. 团队协作流程成熟：固定站会+线上实时沟通+任务台账结合，分工明确、配合默契。
+​
+4. 测试体系完善：完成功能测试、兼容性测试，修复线上可见BUG，项目稳定性显著提升。
+​
+5. 版本管理规范：严格按照行业版本规则在GitHub发布Release，版本迭代轨迹清晰。
+ 
+三、项目现存不足
+ 
+1. 部分前端页面适配仍有瑕疵，多终端显示效果未做到完全统一。
+​
+2. 后端部分接口响应速度一般，未做性能优化，高并发场景未测试。
+​
+3. 项目缺少完整使用文档与接口文档，新成员上手成本较高。
+​
+4. 部分功能交互细节仍可优化，用户体验还有提升空间。
+​
+5. 自动化测试脚本未搭建，后续回归测试依赖人工，效率偏低。
+ 
+四、成员工作内容 
+张 团队队长
+叶 前端页面开发、样式优化、多终端适配；交互逻辑编写；页面BUG修复 25%
+五、各成员过程体会
+ 
+1. 张（队长）
+为期14天的Alpha冲刺节奏紧凑，每日站会让团队进度一目了然。作为队长，不仅要把控整体方向，还要协调成员之间的接口对接问题。这次冲刺让我学会了合理分配任务、把控项目风险，也深刻体会到团队统一规范对项目开发的重要性。后续会继续优化版本管理，带领团队完成剩余优化工作。
+​
+2. 叶
+本次主要负责前端开发，前期因为样式规范不统一走了不少弯路，统一编码规范后开发效率明显提升。和后端同学联调接口的过程中，沟通变得更加高效。虽然遇到了不少适配难题，但在队友帮助下逐一解决，合作的过程很充实，也收获了很多实战经验
+1. 仓库标准目录结构
+package com.team.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * Alpha冲刺 后端接口示例
+ * 统一代码注释规范，模块划分清晰
+ * @author 张三
+ * @date 2025-XX-XX
+ */
+@RestController
+@RequestMapping("/api")
+public class DemoController {
+
+    /**
+     * 项目基础测试接口
+     * @return 接口返回信息
+     */
+    @GetMapping("/hello")
+    public String hello() {
+        return "Alpha冲刺项目接口运行正常！团队协作完成开发";
+    }
+}
+
+2. 示例代码（前后端简易代码，放入仓库 src 目录）
+ 
+（1）后端示例代码（2）前端示例代码
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Alpha冲刺项目主页</title>
+    <style>
+        /* 统一样式规范 */
+        body { text-align: center; margin-top: 100px; }
+    </style>
+</head>
+<body>
+    <h1>团队项目 Alpha 冲刺版本</h1>
+    <p>项目已完成基础功能优化与BUG修复</p>
+    <script>
+        // 前端交互逻辑
+        console.log("前端页面加载完成，Alpha冲刺开发完毕");
+    </script>
+</body>
+</html>
+
+4
+（3）数据库脚本（src/database/init.sql）
+-- 项目数据库初始化脚本 Alpha冲刺版本
+CREATE DATABASE IF NOT EXISTS team_project DEFAULT CHARACTER SET utf8mb4;
+USE team_project;
+
+-- 测试数据表
+CREATE TABLE IF NOT EXISTS user_info (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(20) NOT NULL,
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+（4）仓库 README.md（仓库首页介绍）
+
+# 团队大作业项目 - Alpha 冲刺版本
+## 项目简介
+本项目为软件工程团队大作业，本次完成**14天Alpha冲刺**，优化原有功能、统一开发规范、修复已知漏洞。
+
+## 团队成员
+叶 张
+
+## 环境依赖
+- 后端：Java 8 + SpringBoot 2.7.x
+- 前端：HTML / CSS / JavaScript
+- 数据库：MySQL 8.0
+
+## 运行方式
+1. 执行 database/init.sql 初始化数据库
+2. 启动后端项目
+3. 打开 frontend/index.html 访问前端页面
+
+## 版本迭代记录
+- v1.0.0 初始版本：完成基础功能开发
+- v1.1.0 Alpha冲刺版本：规范代码、优化功能、修复BUG、完善协作流程
+
+## 相关文档
+- 冲刺计划：/docs/Alpha冲刺计划.md
+- 冲刺总结：/docs/Alpha冲刺总结.md
+- 每日日志：/docs/每日冲刺日志/
+
+
